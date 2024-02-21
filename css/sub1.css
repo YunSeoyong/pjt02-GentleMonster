@@ -1,87 +1,7 @@
 @charset "utf-8";
-#wrap{
-    position: relative;
-    width: 100%;
-}
-/* 공통값 */
-.hide{
-    display: block;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    color: transparent;
-}
-/* 모바일 - 헤더 */
-#header{
-    position: relative;
-    z-index: 500;
-    margin-bottom: 15px;
-}
-.hd_in{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    margin: 0 10px;
-}
-.h_logo{
-    margin-top: 34px;
-}
-.h_logo a{
-    display: block;
-    width: 140px;
-    height: 13px;
-    text-indent: -99999px;
-    background-image: url(../img/h_logo.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 100% auto;
-}
-.utill{
-    display: flex;
-    margin-top: 30px;
-}
-.utill > div{
-    margin-left: 12px;
-}
-.utill a{
-    display: block;
-    width: 20px;
-    height: 20px;
-    text-indent: -99999px;
-}
-.gnb, .h_lang, .h_login{
-    display: none;
-}
-.h_search a{
-    background-image: url(../img/search.svg);
-}
-.h_cart{
-    position: relative;
-}
-.h_cart a{
-    background-image: url(../img/shopping_bag.svg);
-}
-.cart_count{
-    position: absolute;
-    right: 0;
-    top: 13px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: center;
-    color: #666;
-    background-color: #ffe178;
-}
-.h_mo_menu a{
-    background-image: url(../img/hamburger_menu.svg);
-}
-
 /* 모바일 - 메인탑 */
 #mainTop{
+    padding-top: 100px;
     margin-bottom: 30px;
     overflow: hidden;
 }
@@ -128,31 +48,31 @@
     background-repeat: no-repeat;
 }
 .cate1 a{
-    background-image: url(../img/sub/cate01.jpg);
+    background-image: url(../img/cate01.jpg);
 }
 .cate2 a{
-    background-image: url(../img/sub/cate02.jpg);
+    background-image: url(../img/cate02.jpg);
 }
 .cate3 a{
-    background-image: url(../img/sub/cate03.jpg);
+    background-image: url(../img/cate03.jpg);
 }
 .cate4 a{
-    background-image: url(../img/sub/cate04.jpg);
+    background-image: url(../img/cate04.jpg);
 }
 .cate5 a{
-    background-image: url(../img/sub/cate05.jpg);
+    background-image: url(../img/cate05.jpg);
 }
 .cate6 a{
-    background-image: url(../img/sub/cate06.jpg);
+    background-image: url(../img/cate06.jpg);
 }
 .cate7 a{
-    background-image: url(../img/sub/cate07.jpg);
+    background-image: url(../img/cate07.jpg);
 }
 .cate8 a{
-    background-image: url(../img/sub/cate08.jpg);
+    background-image: url(../img/cate08.jpg);
 }
 .cate9 a{
-    background-image: url(../img/sub/cate09.jpg);
+    background-image: url(../img/cate09.jpg);
 }
 /* 모바일 - 메인배너 */
 #mainBn1{
@@ -435,18 +355,6 @@
 }
 /* 768px 태블릿 시작 */
 @media screen and (min-width:768px) {
-    /* 768 - 헤더 */
-    #header{
-        margin-bottom: 20px;
-    }
-    .hd_in{
-        margin: 0 25px;
-    }
-    .h_logo a{
-        width: 187px;
-        height: 17px;
-    }
-
     /* 768 - 메인탑 */
     #mainTop{
         margin-bottom: 40px;
@@ -570,73 +478,7 @@
 
 /* 1024px pc 시작 */
 @media screen and (min-width:1024px) {
-    /* 1024 - 헤더 */
-    #header{
-        margin-bottom: 30px;
-    }
-    .hd_in{
-        height: 100px;
-    }
-    .h_logo{
-        margin-top: 39px;
-    }
-    .h_logo a{
-        width: 227px;
-        height: 21px;
-    }
-    .utill{
-        height: 39px;
-    }
-    .utill > div{
-        margin-left: 24px;
-    }
-    .h_search{
-        margin-top: 10px;
-    }
-    .h_mo_menu{
-        margin-top: 10px;
-    }
-    .h_lang, .h_login{
-        display: block;
-    }
-    .h_lang{
-        margin-top: 10px;
-    }
-    .h_lang a{
-        display: flex;
-        width: auto;
-        text-indent: 0;
-        font-size: 12px;
-        font-weight: 400;
-        color: #222;
-    }
-    .h_lang a:hover{
-        color: #666;
-    }
-    .h_lang a::before{
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: 4px;
-        background-image: url(../img/material-symbols-light_language.svg);
-        background-position: center;
-    }
-    .h_login{
-        margin-top: 10px;
-    }
-    .h_login a{
-        display: inline-block;
-        width: auto;
-        color: #222;
-        text-indent: 0;
-    }
-    .h_login a:hover{
-        color: #666;
-    }
-    .h_cart{
-        margin-top: 10px;
-    }    /* 1024 - 메인탑 */
+    /* 1024 - 메인탑 */
     #mainTop{
         margin-bottom: 80px;
     }
@@ -893,31 +735,6 @@
 
 /* 1600px pc 시작 */
 @media screen and (min-width:1600px) {
-    /* 1600 - 헤더 */
-    .hd_in{
-        width: 1560px;
-        margin: 0 auto;
-    }
-    .gnb{
-        margin-top: 40px;
-        display: block;
-    }
-    .gnb ul{
-        display: flex;
-    }
-    .gnb li{
-        margin: 0 20px;
-    }
-    .gnb li a{
-        font-size: 16px;
-        color: #121212;
-    }
-    .gnb li a:hover{
-        color: #666
-    }
-    .h_mo_menu{
-        display: none;
-    }
     /* 1600 - 메인탑 */
     .mt_in{
         width: 1560px;
